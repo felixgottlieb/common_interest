@@ -3,14 +3,27 @@
 
 const url = "https://naturalwinedata-1fc5.restdb.io/rest/naturalwine?";
 
+const options = {
+  headers: {
+    "x-apikey": "61387a0c43cedb6d1f97ee32",
+  },
+};
+
+// Adding the dynamic data for wine categories
 // const url = "https://naturalwinedata-1fc5.restdb.io/rest/naturalwine?" + Color;
 
-fetch(url)
-  .then(function (res) {
-    return res.json();
+fetch(url, options)
+  .then((response) => {
+    if (!response.ok) {
+      throw Error(response.statusText);
+    }
+    return respone.json();
   })
-  .then(function (data) {
+  .then((data) => {
     handleWinelist(data);
+  })
+  .catch((e) => {
+    console.error("An error occured", e.message);
   });
 
 function handleWinelist(data) {
