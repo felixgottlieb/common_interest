@@ -1,32 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600;800&family=Urbanist:wght@100&display=swap");
 
-    <title>Homepage</title>
-    <link rel="stylesheet" href="css/homepage.css" />
-  </head>
-  <body>
-    <header>nav</header>
-    <main>
-      <h1>
-        Welcome to<span class="yellowspan"> Surprise In A Bottle</span
-        ><span class="blackspan">.</span>
-      </h1>
-      <div class="intro">
-        <h2>
-          We want to make natural wine available for everyone without any
-          pretentious fuzz. We present you with a curated selection of exciting
-          natural wines available around Copenhagen.
-        </h2>
-      </div>
-      <section class="yellow">
-        <h2>Let us help you!</h2>
-      </section>
-      <section class="blue">vin</section>
-    </main>
-  </body>
-  <footer>...</footer>
-</html>
+:root {
+  --orange-color: #ed6c34;
+  --blue-color: #1667d9;
+  --yellow-color: #faf200;
+  --black: black;
+  --white: white;
+
+  --primary-font: "Kanit", sans-serif;
+
+  --main-text-color: #081fd0;
+}
+
+header {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--white);
+  font-family: var(--primary-font);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--black);
+  font-family: var(--primary-font);
+}
+
+.yellowspan {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--yellow-color);
+  font-family: var(--primary-font);
+}
+
+.blackspan {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--black);
+  font-family: var(--primary-font);
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--black);
+  font-family: var(--primary-font);
+}
+
+body {
+  background-color: var(--orange-color);
+  margin: 0;
+}
+
+a {
+  font-family: var(--primary-font);
+  color: var(--black);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  background-color: var(--yellow-color);
+  font-family: var(--primary-font);
+}
+
+main {
+  font-family: var(--primary-font);
+}
