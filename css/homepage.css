@@ -13,10 +13,37 @@
 }
 
 header {
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--white);
-  font-family: var(--primary-font);
+  min-height: 70px;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  position: fixed;
+}
+
+header ul {
+  padding: 0;
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  margin-right: 20vw;
+  margin-left: 20vw;
+}
+
+header a {
+  font-family: "Kanit";
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+header li {
+  list-style-type: none;
+}
+
+header a:hover {
+  color: #ed6c34;
+  transition: 1s;
 }
 
 h1 {
@@ -66,4 +93,27 @@ footer {
 
 main {
   font-family: var(--primary-font);
+}
+
+footer {
+  background-color: #ed6c34;
+  min-height: 100px;
+  margin: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+footer ul {
+  justify-content: space-evenly;
+  display: flex;
+  width: 100%;
+}
+footer li {
+  list-style-type: none;
+  font-family: "Kanit";
+  font-weight: 700;
+  font-size: 1.5rem;
 }
