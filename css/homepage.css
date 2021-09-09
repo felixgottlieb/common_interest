@@ -53,6 +53,16 @@ h1 {
   font-family: var(--primary-font);
 }
 
+.welcome {
+  grid-row: 2;
+  margin-left: 4vw;
+}
+
+.intro {
+  grid-row: 3;
+  margin-left: 50vw;
+  margin-right: 10vw;
+}
 .yellowspan {
   font-size: 3rem;
   font-weight: bold;
@@ -73,6 +83,9 @@ h2 {
   color: var(--black);
   font-family: var(--primary-font);
 }
+.y {
+  text-align: center;
+}
 
 body {
   background-color: var(--orange-color);
@@ -86,17 +99,17 @@ a {
   text-decoration: none;
 }
 
+main {
+  font-family: var(--primary-font);
+  display: grid;
+  grid-template-rows: 3fr 6fr 5fr 1fr;
+  background-image: url(/img/homebgg.PNG);
+  background-size: 100%;
+}
+
 footer {
   background-color: var(--yellow-color);
   font-family: var(--primary-font);
-}
-
-main {
-  font-family: var(--primary-font);
-}
-
-footer {
-  background-color: #ed6c34;
   min-height: 100px;
   margin: 0;
   bottom: 0;
@@ -116,4 +129,9 @@ footer li {
   font-family: "Kanit";
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.yellow {
+  background-color: var(--yellow-color);
+  grid-row: 4;
 }
