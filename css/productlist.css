@@ -55,7 +55,7 @@ body {
   display: grid;
   grid-template-rows: 100vh;
   grid-template-columns: 10vw 40vw 40vw 10vw;
-  background-image: url(/img/svg1.svg);
+  background-image: url(/img/svg1.png);
   background-size: 100%;
 }
 
