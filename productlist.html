@@ -16,31 +16,39 @@
   <body>
     <header>
       <ul>
-        <li><a href="productpage.html">Top Picks</a></li>
-        <li><a href="productpage.html">White</a></li>
-        <li><a href="productpage.html">Orange</a></li>
-        <li><a href="productpage.html">Red</a></li>
+        <li><a href="productlist.html?Color=Orange">Top Picks</a></li>
+        <li><a href="productlist.html?Color=White">White</a></li>
+        <li><a href="productlist.html?Color=Orange">Orange</a></li>
+        <li><a href="productlist.html?Color=Red">Red</a></li>
       </ul>
     </header>
     <main>
       <section class="section_1">
-        <h2>Our Top <span class="wine_category">White Wines</span>.</h2>
+        <h2>
+          Our Top
+          <span class="wine_category"
+            ><span class="color_headline">White</span> </span
+          >Wines.
+        </h2>
       </section>
-      <section class="wines_container">
-        <template class="wine_template">
-          <article class="listed_wine">
-            <img src="http://gottliebfelix.com/red1.png" alt="" />
-            <h3>Checcarello</h3>
-            <p>
-              <span class="year">2020</span> |
-              <span class="country">Italy</span> |
-              <span class="grape">Barbera</span> |
-              <span class="price">170DK</span>
-            </p>
-          </article>
-        </template>
+      <section class="color_container">
+        <section class="wines_container"></section>
       </section>
     </main>
+    <template class="wine_template">
+      <article class="listed_wine">
+        <img src="http://gottliebfelix.com/red1.png" alt="" />
+        <a href="productpage.html" alt="" class="product_page_link"
+          ><h3>Checcarello</h3></a
+        >
+        <p>
+          <span class="year">2020</span> | <span class="country">Italy</span>
+          <br />
+          <span class="grape">Barbera</span> | <span class="price">170</span>
+          <span class="currency">DK</span>
+        </p>
+      </article>
+    </template>
     <footer>
       <ul>
         <li>Contact</li>

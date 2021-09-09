@@ -16,31 +16,78 @@
   <body>
     <header>
       <ul>
-        <li><a href="productpage.html">Top Picks</a></li>
-        <li><a href="productpage.html">White</a></li>
-        <li><a href="productpage.html">Orange</a></li>
-        <li><a href="productpage.html">Red</a></li>
+        <li><a href="productlist.html?Color=Orange">Top Picks</a></li>
+        <li><a href="productlist.html?Color=White">White</a></li>
+        <li><a href="productlist.html?Color=Orange">Orange</a></li>
+        <li><a href="productlist.html?Color=Red">Red</a></li>
       </ul>
     </header>
 
     <main>
-      <h2>Our Top Picks</h2>
-      <article>
-        <article class=""></article>
-        <article class=""></article>
-        <article class=""></article>
-        <article class=""></article>
-        <article class=""></article>
-        <article class=""></article>
-        <article class=""></article>
-      </article>
+      <section class="container">
+        <img src="http://gottliebfelix.com/orange3.png" alt="Wine" />
+
+        <div class="Wine_info">
+          <h2>Les Vines Pirouettes</h2>
+          <dl class="description1">
+            <dt class="blue">Year</dt>
+            <dd class="Year"></dd>
+            <dt class="yellow">Country</dt>
+            <dd class="Country"></dd>
+            <dt class="blue">Grape</dt>
+            <dd class="Grape"></dd>
+            <dt class="yellow">Characteristics</dt>
+            <dd class="Characteristics"></dd>
+
+            <dt class="blue">Produced by</dt>
+            <dd class="Produced"></dd>
+            <dt class="yellow">Bottle size</dt>
+            <dd class="yellow"><span class="Size"></span> ml</dd>
+            <dt class="blue">Price</dt>
+            <dd class="blue"><span class="Price"></span> dk</dd>
+            <dt class="yellow">Proof</dt>
+            <dd class="yellow"><span class="Proof"></span> %</dd>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section_2">
+        <div class="description">
+          <h3>Description</h3>
+          <p>
+            Les Vins Pirouettes er et dybt sympatisk projekt startet af
+            vinbonden Christian Binner, der er en af Alsaces fremmeste
+            foregangsmænd for umanipuleret vin fremstillet af økologiske druer.
+            Binner var træt af at være vidne til de mange vinbønder, der dyrkede
+            fantastiske druer, blot for at sælge dem til store kooperativer der
+            så kunne omforme druerne til vin af mere eller mindre dubiøs
+            karakter.
+          </p>
+        </div>
+        <div class="map">
+          <h3 class="shop_stocking">
+            Get your bottle at <span class="shop"></span>.
+          </h3>
+          <iframe
+            (frametitle):
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1125.0466430923452!2d12.561070949164927!3d55.68797742398953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253072fe8dbab%3A0xc878b09b3c1a4f06!2sRavnsborg!5e0!3m2!1sen!2sdk!4v1631127057636!5m2!1sen!2sdk"
+            width="800"
+            height="600"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
     </main>
+
     <footer>
       <ul>
         <li>Contact</li>
-        <li>facebook</li>
+        <li>Facebook</li>
         <li>Adress</li>
       </ul>
     </footer>
+    <script src="js/productpage.js"></script>
   </body>
 </html>

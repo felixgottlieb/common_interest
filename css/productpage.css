@@ -12,11 +12,15 @@
   --main-text-color: #081fd0;
 }
 
-* {
+body {
   background-color: #ed6c34;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+main {
+  margin-right: 10vw;
+  margin-left: 10vw;
 }
 
 header {
@@ -49,9 +53,10 @@ header li {
 }
 
 header a:hover {
-  color: #ed6c34;
+  color: black;
   transition: 1s;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -63,7 +68,7 @@ h2 {
 }
 
 footer {
-  background-color: #ed6c34;
+  background-color: #faf200;
   min-height: 100px;
   margin: 0;
   bottom: 0;
@@ -83,4 +88,112 @@ footer li {
   font-family: "Kanit";
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+img {
+  height: 600px;
+  width: auto;
+  grid-column: 2;
+  grid-row: 2;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 10% 40% 40%;
+  grid-template-rows: 10vh 90vh;
+}
+
+.Wine_info {
+  grid-column: 3;
+  grid-row: 2;
+  align-self: center;
+  justify-self: flex-start;
+  display: grid;
+}
+
+.section_2 p {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  max-width: 50vw;
+}
+
+.section_2 {
+  display: grid;
+  grid-template-rows: 35vh 100vh;
+  grid-template-columns: 20vw 60vw 20vw;
+}
+
+.blue,
+.Year,
+.Grape,
+.Produced,
+.Price {
+  color: white;
+}
+
+.yellow,
+.Country,
+.Characteristics,
+.Size,
+.Proof {
+  color: black;
+}
+
+.map {
+  grid-row: 2;
+  grid-column: 1/3;
+  align-self: flex-start;
+  justify-self: center;
+}
+
+.description {
+  grid-row: 1;
+  grid-column: 1/3;
+  justify-self: center;
+  align-self: flex-start;
+}
+
+dl {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  width: 100%;
+  overflow: hidden;
+}
+
+dt {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  float: left;
+  width: 50%;
+  margin-bottom: 1px;
+}
+
+dd {
+  color: white;
+  margin-left: 0;
+  float: left;
+  width: 50%;
+  margin-bottom: 1px;
+}
+
+h2 {
+  font-family: var(--primary-font);
+  color: white;
+  margin-bottom: 0;
+  font-size: 3rem;
+  border-bottom: 2px solid black;
+}
+
+h3 {
+  font-family: var(--primary-font);
+  color: white;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.shop {
+  color: #faf200;
 }
