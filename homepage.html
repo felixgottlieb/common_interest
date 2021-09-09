@@ -11,36 +11,57 @@
   <body>
     <header>
       <ul>
-        <li><a href="productpage.html">Top Picks</a></li>
-        <li><a href="productpage.html">White</a></li>
-        <li><a href="productpage.html">Orange</a></li>
-        <li><a href="productpage.html">Red</a></li>
+        <li><a href="productlist.html?Color=Orange">Top Picks</a></li>
+        <li><a href="productlist.html?Color=White">White</a></li>
+        <li><a href="productlist.html?Color=Orange">Orange</a></li>
+        <li><a href="productlist.html?Color=Red">Red</a></li>
       </ul>
     </header>
     <main>
-      <div class="welcome">
+      <section class="section_1">
         <h1>
           Welcome to<span class="yellowspan"> Surprise In A Bottle</span
           ><span class="blackspan">.</span>
         </h1>
-      </div>
-      <div class="intro">
-        <h2>
+
+        <p class="intro">
           We want to make natural wine available for everyone without any
           pretentious fuzz. We present you with a curated selection of exciting
           natural wines available around Copenhagen.
-        </h2>
-      </div>
-      <section class="yellow">
-        <h2 class="y">Let us help you!</h2>
+        </p>
+        <div class="yellow">
+          <img src="img/arrow.svg" alt="" class="arrow" id="arrow_1" />
+          <img src="img/arrow.svg" alt="" class="arrow" id="arrow_2" />
+          <h2>Let us help you!</h2>
+        </div>
       </section>
-      <section class="blue">
-        <li><a href="productlist.html" class="topPicks"> Top Picks </a></li>
-        <ol>
-          <li><a href="productlist.html" class="white"> White</a></li>
-          <li><a href="productlist.html" class="orange"> Orange</a></li>
-          <li><a href="productlist.html" class="red"> Red</a></li>
-        </ol>
+      <section class="section_2">
+        <img src="img/white.PNG" class="link_img" alt="" id="white_img" />
+        <a
+          href="productlist.html?Color=White"
+          class="category_link"
+          id="white_link"
+        >
+          White
+        </a>
+
+        <img src="img/orange.png" class="link_img" alt="" id="orange_img" />
+        <a
+          href="productlist.html?Color=Orange"
+          class="category_link"
+          id="orange_link"
+        >
+          Orange
+        </a>
+
+        <img src="img/red.png" class="link_img" alt="" id="red_img" />
+        <a
+          href="productlist.html?Color=Red"
+          class="category_link"
+          id="red_link"
+        >
+          Red
+        </a>
       </section>
     </main>
   </body>

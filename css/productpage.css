@@ -45,6 +45,8 @@ header a {
   font-weight: 700;
   font-size: 1.5rem;
   color: white;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: #ed6c34;
   text-decoration: none;
 }
 
@@ -181,7 +183,7 @@ dd {
 
 h2 {
   font-family: var(--primary-font);
-  color: white;
+  color: black;
   margin-bottom: 0;
   font-size: 3rem;
   border-bottom: 2px solid black;
