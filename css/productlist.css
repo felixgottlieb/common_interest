@@ -13,20 +13,29 @@
 }
 
 header {
-  min-height: 70px;
-  align-items: center;
-  display: flex;
+  display: grid;
+  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-rows: 70px;
   width: 100%;
   position: fixed;
 }
 
+.logotype {
+  width: 100px;
+  grid-row: 1;
+  grid-column: 1;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
 header ul {
   padding: 0;
-  width: 100%;
-  justify-content: space-evenly;
+  grid-column: 1/4;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
   display: flex;
-  margin-right: 20vw;
-  margin-left: 20vw;
+  grid-gap: 120px;
 }
 
 header a {
@@ -34,8 +43,6 @@ header a {
   font-weight: 700;
   font-size: 1.5rem;
   color: white;
-  -webkit-text-stroke-width: 0px;
-  -webkit-text-stroke-color: #faf200;
   text-decoration: none;
 }
 
@@ -45,6 +52,8 @@ header li {
 
 header a:hover {
   color: #ed6c34;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #1667d9;
   transition: 1s;
 }
 
@@ -96,7 +105,7 @@ h2 {
   background-color: #faf200;
 }
 
-img {
+.product_img {
   width: 300px;
   justify-self: center;
 }
@@ -133,28 +142,53 @@ p {
   display: grid;
   margin-bottom: 10vh;
 }
-
 footer {
-  background-color: #faf200;
-  min-height: 100px;
+  background-color: var(--yellow-color);
+  font-family: var(--primary-font);
   margin: 0;
   bottom: 0;
-  width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+  grid-template-rows: 100px;
   color: black;
   align-items: center;
 }
 
-footer ul {
-  justify-content: space-evenly;
-  display: flex;
-  width: 100%;
-}
-footer li {
-  list-style-type: none;
+.contact {
+  grid-row: 1;
+  grid-column: 2;
+  align-self: center;
+  justify-self: flex-start;
   font-family: "Kanit";
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.adress {
+  grid-row: 1;
+  grid-column: 4;
+  align-self: center;
+  justify-self: flex-end;
+  font-family: "Kanit";
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.logotype2 {
+  grid-row: 1;
+  grid-column: 1;
+  align-self: center;
+  justify-self: flex-start;
+  height: 80px;
+  margin-left: 30px;
+}
+
+.socialmedia {
+  grid-row: 1;
+  grid-column: 3;
+  align-self: center;
+  justify-self: center;
+  height: 70px;
 }
 
 .product_page_link {

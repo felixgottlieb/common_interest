@@ -40,7 +40,7 @@ function showWines(naturalwine) {
     .setAttribute("href", "productpage.html?id=" + naturalwine._id);
 
   copy.querySelector("h3").textContent = naturalwine.Title;
-  copy.querySelector("img").src = naturalwine.img;
+  copy.querySelector(".product_img").src = naturalwine.img;
   copy.querySelector(".year").textContent = naturalwine.Year;
   copy.querySelector(".country").textContent = naturalwine.Country;
   copy.querySelector(".grape").textContent = naturalwine.Grape;

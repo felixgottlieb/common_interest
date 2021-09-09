@@ -26,7 +26,7 @@ fetch(url, options)
 function showWine(naturalwine) {
   document.querySelector("h2").textContent = naturalwine.Title;
 
-  document.querySelector("img").src = naturalwine.img;
+  document.querySelector(".wine_img").src = naturalwine.img;
   document.querySelector("iframe").src = naturalwine.shop_map_link;
 
   document.querySelector(".Year").textContent = naturalwine.Year;
